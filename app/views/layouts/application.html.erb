@@ -9,6 +9,7 @@
 <body>
   <header>
     <div class="col-xs-3">
+    <%= link_to root_path, class: 'logo' do %>
     <div class="circle">
         <br />
         THEY
@@ -17,13 +18,14 @@
         <br />
         WHAT?
       </div>
+      <% end %>
     </div>
     </div>
     <div class="col-xs-4 slogan">
       Beautiful quotes making sweet love to your eyes
     </div>
     <div class="col-xs-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
   </header>
   <hr />
@@ -36,7 +38,7 @@
 <div class="footer">
   <div class="container">
     <div class="col-xs-6">
-        <%= link_to "My Eyes Need More", "#", class: 'next-quote' %>
+        <%= link_to "My Eyes Need More", root_path, class: 'next-quote' %>
       </div>
       <div class="col-xs-6 footer-blurb">
         Made by <a href="http://briandurbin.getforge.io">Brian</a><br />
